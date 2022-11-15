@@ -12,20 +12,6 @@
         android:layout_height="wrap_content"
         app:layout_constraintTop_toTopOf="parent">
 
-<!--        <androidx.appcompat.widget.Toolbar-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="wrap_content">-->
-
-<!--            <TextView-->
-<!--                android:layout_width="wrap_content"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:text="MADPractical7_20012011013"-->
-<!--                android:textSize="18dp"-->
-<!--                android:textColor="@color/white"-->
-<!--                android:textStyle="bold"/>-->
-
-<!--        </androidx.appcompat.widget.Toolbar>-->
-
     </com.google.android.material.appbar.AppBarLayout>
 
     <androidx.core.widget.NestedScrollView
@@ -64,53 +50,54 @@
                         />
 
                     <LinearLayout
-                        android:background="@color/black"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:backgroundTint="#EAEFEA"
+                        android:background="@color/black"
+                        android:backgroundTint="@color/black"
                         android:orientation="vertical"
                         android:padding="20dp">
+
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="Create Alarm Time"
-                            android:textStyle="bold"
-                            android:textSize="15sp"/>
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
                             android:layout_marginTop="10dp"
-                            android:layout_marginStart="10dp"
-                            android:text="By pressing buttons, Alarm can be created and cancelled."/>
+                            android:text="By pressing buttons, Alarm can be created and cancelled." />
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginStart="10dp"
-                            android:text="Check Current time by looking below real digital clock."
-                            android:layout_marginTop="10dp"/>
+                            android:layout_marginTop="10dp"
+                            android:text="Check Current time by looking below real digital clock." />
 
                         <TextClock
                             android:id="@+id/show_time_tv"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
-                            android:text="Show Time Here"
-                            android:textStyle="bold"
                             android:layout_marginTop="10dp"
-                            android:textSize="15sp"/>
+                            android:text="Show Time Here"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
 
                         <com.google.android.material.button.MaterialButton
                             android:id="@+id/btn_set_alarm"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            app:cornerRadius="25dp"
                             android:layout_marginTop="10dp"
-                            app:icon="@drawable/ic_baseline_add_alarm_24"
                             android:text="Create Alarm"
+                            android:textAllCaps="false"
                             android:textStyle="bold"
-                            android:textAllCaps="false"/>
+                            app:cornerRadius="25dp"
+                            app:icon="@drawable/ic_baseline_add_alarm_24" />
 
                     </LinearLayout>
 
@@ -139,18 +126,19 @@
                         android:src="@drawable/alarm" />
 
                     <LinearLayout
-                        android:background="@color/purple_200"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:backgroundTint="#EAFFEA"
+                        android:background="@color/purple_200"
+                        android:backgroundTint="@color/black"
                         android:orientation="vertical"
                         android:padding="20dp">
+
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="Set Alarm Time"
-                            android:textStyle="bold"
-                            android:textSize="15sp"/>
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
 
                         <TextView
                             android:id="@+id/set_alarm_time"
@@ -158,20 +146,20 @@
                             android:layout_height="wrap_content"
                             android:layout_marginTop="10dp"
                             android:text="Time"
-                            android:textStyle="bold"
-                            android:textSize="15sp"/>
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
 
 
                         <com.google.android.material.button.MaterialButton
                             android:id="@+id/btn_cancel_alarm"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            app:cornerRadius="25dp"
                             android:layout_marginTop="20dp"
-                            app:icon="@drawable/ic_baseline_alarm_off_24"
                             android:text="Cancel Alarm"
+                            android:textAllCaps="false"
                             android:textStyle="bold"
-                            android:textAllCaps="false"/>
+                            app:cornerRadius="25dp"
+                            app:icon="@drawable/ic_baseline_alarm_off_24" />
 
                     </LinearLayout>
 

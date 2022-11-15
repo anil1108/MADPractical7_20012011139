@@ -57,11 +57,7 @@ class MainActivity : AppCompatActivity() {
             PendingIntent.getBroadcast(applicationContext, 234324243, intent, 0)
         val alarmManager = getSystemService(ALARM_SERVICE) as AlarmManager
         if(str == "Start") {
-            alarmManager.setExact(
-                AlarmManager.RTC_WAKEUP,
-                millisTime,
-                pendingIntent
-            )
+            alarmManager.setExact(AlarmManager.RTC_WAKEUP,millisTime,pendingIntent)
         }else if(str == "Stop")
         {
             alarmManager.cancel(pendingIntent)
